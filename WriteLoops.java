@@ -59,7 +59,8 @@ public class WriteLoops {
 
         // Write a FOR loop that counts down from 100 to 0.
         // calling
-        w = w + 1;
+        for(int i = 100; i>0; i--){
+        w = w + 1;}
         // each time through the loop
         
         return w;
@@ -70,7 +71,8 @@ public class WriteLoops {
 
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
-        w = w + 1;
+        for(int i = 0; i <=32; i+=2){
+        w = w + 1;}
         // each time through the loop
         return w;
     }
@@ -80,7 +82,8 @@ public class WriteLoops {
 
         // Write a FOR loop from 1 to less than 5001 by 11s.
         // calling
-        w = w + 1;
+        for(int i=0; i<5001; i+=11){
+        w = w + 1;}
         // each time through the loop
         
         return w;
