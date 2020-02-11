@@ -95,9 +95,12 @@ public class WriteLoops {
         // Write a nested FOR loop(s), where one counts from
         // 0 to less than 20 and the inner one counts from 0 to 4
                 // calling
+                for(int i = 0; i<20;i++){
+                    for(int j = 0; j<5;j++){
                 w = w + 1;
                 // each time through the inner loop
-
+            }
+        }
         return w;
     }
 
@@ -108,13 +111,19 @@ public class WriteLoops {
         // statement inside the loop that checks the
         // loop index counter and if it’s greater than 51,
         // prints “Hello Zipcode” instead of the statement w = w + 1;
-
+        for(int i=5; i<=105; i++){
+            if(i<=51){
                 // calling
                 w = w + 1;
+            } else{
+            System.out.println("Hello Zipcode");
+            }
             // each time through the inner loop
         
-        return w;
+       
     }
+     return w;
+}
 
     public void simpleLoops() {
         int i = 0;
@@ -139,13 +148,15 @@ public class WriteLoops {
     // After the loop is done, print “Honey, I’m Home!”
     public int driveHome() {
         int w = 0;
-
-        // you need to use a .equals for two Strings.
-
-            // calling
-            w = w + 1;
-            // each time through the inner loop
+        while(gpsCurrentLocation() != "home"){
+        driveSomeMore();
         
+        // you need to use a .equals for two Strings.
+      
+            // calling
+            w = w + 1;}
+            // each time through the inner loop
+          System.out.println("Honey, I'm Home!");
 
             return w;
     }
@@ -161,13 +172,15 @@ public class WriteLoops {
         int highestScore = 236;
         int currentScore = gameNextScore();
         int runningScore = 0;
-
+            
         // do your while loop here
- 
+            while(runningScore<highestScore){
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+            runningScore+=currentScore;
+            currentScore=gameNextScore();
+        }
         return w; // >= 3;
     }
 
